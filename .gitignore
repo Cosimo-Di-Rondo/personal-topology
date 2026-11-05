@@ -1,0 +1,7 @@
+# 真实档案永远不要提交
+data/
+dist/
+*.local.json
+.DS_Store
+__pycache__/
+.pytest_cache/

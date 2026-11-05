@@ -1,0 +1,41 @@
+{
+  "self": {
+    "name": "我",
+    "fields": [
+      {"label": "身份", "value": "示例用户 · 产品经理"},
+      {"label": "说明", "value": "此文件是虚构示例数据，用于演示与测试，不含任何真实个人信息。"}
+    ]
+  },
+  "stages": [
+    {"id": "middle", "label": "初中", "color": "#8FA3BF"},
+    {"id": "high", "label": "高中", "color": "#A98BD1"},
+    {"id": "university", "label": "大学", "color": "#69B08A"},
+    {"id": "work", "label": "工作", "color": "#E09A5A"}
+  ],
+  "circles": [
+    {"id": "studio", "label": "工作室", "members": ["阿岚", "老周", "陈默", "苏禾"]}
+  ],
+  "people": [
+    {"name": "阿岚", "stage": "middle", "relation": "发小", "tags": ["发小"], "count": 8,
+     "facts": ["2012-09：初中同班，家住同一个小区。", "2024-06：他结婚，到场。"]},
+    {"name": "老周", "stage": "middle", "relation": "发小", "tags": ["发小"], "count": 5,
+     "facts": ["2013-04：一起打校队篮球。"]},
+    {"name": "陈默", "stage": "high", "relation": "朋友", "tags": ["同学"], "count": 3,
+     "facts": ["2018-09：高中同桌。"]},
+    {"name": "苏禾", "stage": "university", "relation": "朋友", "tags": ["工作室"], "count": 9,
+     "facts": ["2021-10：在工作室一起做项目。", "2023-05：一起办过展。"]},
+    {"name": "何晓", "stage": "university", "relation": "mentor", "tags": ["老师"], "count": 2,
+     "facts": ["2022-03：课程导师，推荐过实习。"]},
+    {"name": "郑野", "stage": "university", "relation": "朋友", "tags": ["工作室"], "count": 4,
+     "facts": ["2022-09：工作室招新认识。"]},
+    {"name": "梁秋", "stage": "university", "relation": "同事", "tags": ["实习"], "count": 1,
+     "facts": ["2024-07：第一份实习的同组同事。"]},
+    {"name": "唐宁", "stage": "work", "relation": "同事", "tags": [], "count": 2,
+     "facts": ["2025-04：入职后的搭档。"]}
+  ],
+  "peer_edges": [
+    {"a": "阿岚", "b": "老周", "label": "发小"},
+    {"a": "陈默", "b": "苏禾", "label": "介绍认识"},
+    {"a": "苏禾", "b": "郑野", "label": "工作室"}
+  ]
+}
